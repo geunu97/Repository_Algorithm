@@ -3,8 +3,8 @@
 
 a = int(input())
 
-sum = 0
-count = 0
+sum = 0.0
+count = 0.0
 
 for i in range(a):
     list_a = list(map(float,input().split()))
