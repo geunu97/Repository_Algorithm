@@ -7,15 +7,8 @@
 list_a=[]
 list_b=[]
 
-count = 0
-
 for i in range(10):
     list_a.append(int(input()))
     list_b.append(int(list_a[i] % 42))
 
-for j in range(9):
-    for k in range(j+1,10):
-        if list_b[j] == list_b[k]:
-            count += 1
-
-print(len(list_a)-count) 
+print(len(set(list_b)))
