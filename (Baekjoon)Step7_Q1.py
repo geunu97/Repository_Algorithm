@@ -3,6 +3,5 @@
 
 a = input()
 
-print("{:d}".format(a))
+print(ord(a))
 
-p
