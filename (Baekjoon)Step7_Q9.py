@@ -8,22 +8,28 @@
 
 '''
 풀이1)
-croatia = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+list_a = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
 a = input()
 
-for i in croatia:
+for i in list_a:
     a = a.replace(i, 'a')
 
 print(len(a))
 '''
 
-#풀이2
-croatia = ['=', '-', 'dz=', 'lj', 'nj']
+#풀이2 - 세 자리수일 때를 위해서 리스트안에 "="을 2개 쓴거임
+list_a = ['=', '-', 'dz=', 'lj', 'nj']
 
 a = input()
 
-print(len(a) - sum(a.count(i) for i in croatia))
+sum = 0
+
+for i in list_a:
+    sum += a.count(i)
+
+print(len(a)-sum)
+
 
 
 
