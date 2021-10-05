@@ -10,3 +10,9 @@ a,b,v = map(int,input().split())
 
 answer = math.ceil((v - a) / (a - b)) + 1
 print(answer)
+
+
+#정상에 도착했으면 미끄러지지 않는다는 말이 중요!!
+#반복문 사용X, 범위가 너무 큼
+#전에 한번 풀었던 문제랑 비슷하게 풀었음
+
