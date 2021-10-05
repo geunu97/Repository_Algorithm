@@ -19,6 +19,7 @@ for i in range(a):
         X = str("{:02d}".format(X))
    
     print(Y+X)
+    #print("%d%02d"%(X,Y)) 출력형태 2번째 방법
 
 
 
