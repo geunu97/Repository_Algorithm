@@ -14,11 +14,11 @@ for i in range(a):
 
   if n_sqrt * (n_sqrt + 1) > n:                        
     answer = 2 * n_sqrt -1
-    print(answer+1)
 
   elif  n_sqrt * (n_sqrt + 1) <= n:
     answer = 2 * n_sqrt 
-    print(answer+1)
+
+  print(answer+1)
 
 
 
