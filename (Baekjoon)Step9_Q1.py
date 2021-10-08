@@ -27,3 +27,5 @@ for i in range(a):
         count += 1
 
 print(count)
+
+# 2 ~ n-1까지 반복문 돌린 수 i % 주어진 수 == 0 이면 아님
