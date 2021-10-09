@@ -1,0 +1,22 @@
+#9단계: 기본 수학 2
+#5번 문제
+
+x,y,w,h = map(int,input().split())
+
+if x >= w - x:
+    xx = w - x
+else:
+    xx = x
+
+if y >= h - y:
+    yy = h - y
+else:
+    yy = y 
+
+min = min(xx,yy,(xx*xx+yy*yy)**0.5)     #min() 내장함수 사용  #제곱근 사용
+
+print(min)
+
+#그림 그려서 풀면 쉽게 해결됨!
+
+#abs 내장함수, 절댓값 함수 
