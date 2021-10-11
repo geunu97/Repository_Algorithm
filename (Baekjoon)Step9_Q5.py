@@ -1,26 +1,40 @@
 #9단계: 기본 수학 2
 #5번 문제
 
-x,y,w,h = map(int,input().split())
+def sosu(i):
+    sqrt_num = int(i**0.5)
 
-print(min(x,y,w-x,h-y))
+    for j in range(3,sqrt_num+1,2):          
+        if i % j == 0:
+            return False
+    return True
 
-'''
-#대각선 길이까지 생각함, 잘못된 생각
-if x >= w - x:
-    xx = w - x
-else:
-    xx = x
+list_a=[]
+for x in range(3,123456*2+1,2):
+    if sosu(x):
+        list_a.append(x)
 
-if y >= h - y:
-    yy = h - y
-else:
-    yy = y 
 
-min = min(xx,yy,(xx*xx+yy*yy)**0.5)     #min() 내장함수 사용  #제곱근 사용
+while True:                              
+    a = int(input())
 
-print(min)
+    if a == 1 or a == 2:
+        print("1")
+        continue
+    elif a == 0:
+        break
 
-'''
+    else: 
+        count = 0             # 오래 걸림 !!! 중요!!!!          #리스트안에 하나의 정수가 있나 확인하려면 처음부터 끝까지 비교함, a를 비교했음 
+        for i in list_a:      # for i in range(a+1,a*2+1):     #답은 리스트 한번만 돌리면 끝, 리스트 숫자를 돌림!!
+            if a<i<=a*2:      #    if i in list_a:    
+                count += 1
+        print(count)
 
-#abs 내장함수, 절댓값 함수 
+
+#for i in range(a+1,2*a+1):   if i % 2 == 0:   continue        짝수면 바로 패스 홀수만 계산, 
+#for j in range(3,sqrt_num+1,2):                               홀수씩 계산, 3~ 제곱근까지 계산
+#리스트 미리 만들기
+#함수 만들어서 푸는게 쪼금 더 빠름
+
+
