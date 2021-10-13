@@ -9,11 +9,10 @@ def sosu(i):
             return False
     return True
 
-list_a=[]
+list_a=[]                  
 for x in range(3,123456*2+1,2):
     if sosu(x):
         list_a.append(x)
-
 
 while True:                              
     a = int(input())
@@ -31,10 +30,10 @@ while True:
                 count += 1
         print(count)
 
-
-#for i in range(a+1,2*a+1):   if i % 2 == 0:   continue        짝수면 바로 패스 홀수만 계산, 
-#for j in range(3,sqrt_num+1,2):                               홀수씩 계산, 3~ 제곱근까지 계산
 #리스트 미리 만들기
+
+#짝수면 바로 패스 홀수만 계산, 
+#홀수씩 계산, 3~ 제곱근까지 계산
 #함수 만들어서 푸는게 쪼금 더 빠름
 
 
