@@ -8,7 +8,7 @@ list_b=[]
 list_c=[]
 
 for i in range(a):
-    x,y = map(int,input().split())           #같은 이름의 변수 만들었음;;
+    x,y = map(int,input().split())           
     list_a.append(x)                       #입력형태 봐두기
     list_b.append(y)
 
@@ -16,7 +16,7 @@ for j in range(0,a):
     count = 1
 
     for k in range(0,a):
-        if list_a[j] < list_a[k] and list_b[j] < list_b[k]:        #한개당 모두 비교하기
+        if list_a[j] < list_a[k] and list_b[j] < list_b[k]:        # (자기포함) 기준한개당 모두 비교하기
             count += 1
 
     list_c.append(count)
