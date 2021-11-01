@@ -3,7 +3,7 @@
 #   x좌표가 같으면 y좌표가 증가하는 순서로 정렬한 다음 출력하는 프로그램을 작성하시오.
 
 import sys
-input = sys.stdin.readline
+input = sys.stdin.readline 
 
 N = int(input())
 
