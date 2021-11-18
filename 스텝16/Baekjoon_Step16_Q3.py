@@ -1,6 +1,6 @@
 #16단계: 그리디 알고리즘 (탐욕법)
 #3. 줄 순서
-
+  
 a= int(input())
 
 list_a = list(map(int,input().split()))
