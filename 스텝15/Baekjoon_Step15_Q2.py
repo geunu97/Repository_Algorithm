@@ -1,14 +1,13 @@
 #15단계: 동적 계획법1 (DP 다이나믹프로그래밍)
-#2. 신나는 함수 실행
+#2. 입력으로 주어진 각각의 a, b, c에 대해서 빠르게 w(a, b, c)를 출력하기
 
-dictionary = { }
+dictionary = { }  #메모이제이션
 
 def dp(a,b,c):
     key = "{} {} {}".format(a,b,c)     #값이 3개여도 편하게 키값 형식 설정해놓기
 
-    if a <= 0 or b <= 0 or c <= 0:     #이거는 따로 배놔야 됨!!!!! (특정 값이 아니기 때문)
+    if a <= 0 or b <= 0 or c <= 0:     
         return 1
-
 
     if key in dictionary:
         return dictionary[key]
@@ -38,8 +37,7 @@ while True:
     print("w(%d, %d, %d) = %d"%(a,b,c,dp(a,b,c)))
 
 
-#동적계획법(메모이제이션) 문제!
-#딕셔너리 사용!
+#재귀함수 + 딕셔너리 사용
 
 
 
