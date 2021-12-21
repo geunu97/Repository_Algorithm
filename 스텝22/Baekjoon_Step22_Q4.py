@@ -31,4 +31,6 @@ for i in range(n):
 
 
 
-
+#Point
+#left_heap 부터 넣고, left_heap, right_heap 번갈아 가면서 넣기
+#right_heap에 값이 들어있고, left_heap에 있는 값이 right_heap의 최솟값 보다 크다면 값 바꾸기
